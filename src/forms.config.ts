@@ -8,7 +8,7 @@
 //   4. Save and redeploy (npm run build → vercel --prod)
 // ─────────────────────────────────────────────────────────────────────────────
 
-export type FormCategory = 'Valuations' | 'Construction' | 'HR' | 'Operations'
+export type FormCategory = 'Valuations' | 'Construction' | 'Operations'
 
 export type FormStatus = 'live' | 'coming-soon'
 
@@ -31,7 +31,7 @@ export const FORMS: FormEntry[] = [
     description: 'Submit proposed comparable sales for a Reconsideration of Value on sold properties.',
     category: 'Valuations',
     icon: 'FileText',
-    url: 'https://rov.limaone.com/form?type=sales',
+    url: 'https://lima-rov-form.vercel.app/',
     status: 'live',
     featured: true,
   },
@@ -41,7 +41,7 @@ export const FORMS: FormEntry[] = [
     description: 'Submit proposed rental comparables for a Reconsideration of Value on leased properties.',
     category: 'Valuations',
     icon: 'Home',
-    url: 'https://rov.limaone.com/form?type=rental',
+    url: 'https://lima-rov-form.vercel.app/',
     status: 'live',
   },
 
@@ -93,26 +93,6 @@ export const FORMS: FormEntry[] = [
     status: 'coming-soon',
   },
 
-  // ── HR ───────────────────────────────────────────────────────────────────
-  {
-    id: 'employee-status-change',
-    name: 'Employee Status Change',
-    description: 'Submit a status change request for an employee — role, compensation, or department updates.',
-    category: 'HR',
-    icon: 'UserCog',
-    url: '',
-    status: 'coming-soon',
-  },
-  {
-    id: 'new-position-kickoff',
-    name: 'New Position Kickoff',
-    description: 'Initiate a new hire requisition and position kickoff for HR and management review.',
-    category: 'HR',
-    icon: 'UserPlus',
-    url: '',
-    status: 'coming-soon',
-  },
-
   // ── OPERATIONS ───────────────────────────────────────────────────────────
   {
     id: 'sreo',
@@ -126,4 +106,4 @@ export const FORMS: FormEntry[] = [
   },
 ]
 
-export const CATEGORIES: FormCategory[] = ['Valuations', 'Construction', 'HR', 'Operations']
+export const CATEGORIES: FormCategory[] = ['Valuations', 'Construction', 'Operations']

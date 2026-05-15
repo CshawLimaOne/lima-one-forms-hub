@@ -7,7 +7,6 @@ import { FormCard } from '../components/FormCard'
 const CATEGORY_ICONS: Record<FormCategory, string> = {
   Valuations:   '📊',
   Construction: '🏗️',
-  HR:           '👤',
   Operations:   '⚙️',
 }
 
@@ -73,7 +72,7 @@ export function HubPage() {
 
           <p className="text-base text-[#78819D] mb-10 leading-relaxed">
             Find, open, and submit any Lima One Capital form in seconds — from borrower ROV
-            requests to contractor onboarding and HR workflows.
+            requests to contractor onboarding and operations workflows.
           </p>
 
           {/* Stats card */}

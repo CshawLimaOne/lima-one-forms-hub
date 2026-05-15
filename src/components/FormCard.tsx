@@ -1,6 +1,6 @@
 import {
   FileText, Home, HardHat, ClipboardList, CheckSquare,
-  BarChart2, UserCog, UserPlus, ArrowRight, Clock,
+  BarChart2, ArrowRight, Clock,
   Calculator, Building2,
   type LucideIcon,
 } from 'lucide-react'
@@ -9,13 +9,12 @@ import type { FormEntry } from '../forms.config'
 
 const ICON_MAP: Record<string, LucideIcon> = {
   FileText, Home, HardHat, ClipboardList, CheckSquare,
-  BarChart2, UserCog, UserPlus, Calculator, Building2,
+  BarChart2, Calculator, Building2,
 }
 
 const CATEGORY_COLORS: Record<string, { bg: string; text: string }> = {
   Valuations:   { bg: 'bg-[#E5E9FF]', text: 'text-[#1C39D8]' },
   Construction: { bg: 'bg-[#FFF5DB]', text: 'text-[#EAA800]' },
-  HR:           { bg: 'bg-[#E1F7E4]', text: 'text-[#139B23]' },
   Operations:   { bg: 'bg-[#F6F7F9]', text: 'text-[#78819D]' },
 }
 
